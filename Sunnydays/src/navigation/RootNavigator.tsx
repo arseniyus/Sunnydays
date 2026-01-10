@@ -1,23 +1,15 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { LoginScreen } from "../screens/LoginScreen";
+import { useFakeAuth } from "../state/FakeAuth";
+import { AuthStack } from "./AuthStack";
 import { MainTabs } from "./MainTabs";
 
-const Stack = createNativeStackNavigator();
-
 export function RootNavigator() {
+    const { isSignedIn } = useFakeAuth();
 
     return (
         <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name="Login" component={LoginScreen} />
-                <Stack.Screen
-                    name="MainTabs"
-                    component={MainTabs}
-                    options={{ headerShown: false}}
-                />
-            </Stack.Navigator>
+            {isSignedIn ? <MainTabs /> : <AuthStack />} 
         </NavigationContainer>
-    )
+    );
 }

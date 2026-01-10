@@ -6,7 +6,7 @@ export function UsScreen({ navigation }: any  ) {
     return (
         <Screen>
             <View style={{ gap: 12 }}>
-                <Text style={{ fontSize: 24, fontWeight: "600"}}>US</Text>
+                <Text style={{ fontSize: 24, fontWeight: "600"}}>Us</Text>
                 <Text>Placeholder Text</Text>
 
                 <Button
