@@ -1,5 +1,30 @@
-export default const onboardingQuizquestions = [
-    {}
-    {}
-    {}
+import { QuizQuestion } from "../types"
+
+export const onboardingQuizquestions: QuizQuestion[] = [
+    {id: 1, questionText: "What is your love language?", answerOptions: [], userAnswer: ""},
+    {id: 2, questionText: "What are your strength? (please pick 3 - 5 from our list or add your own)", answerOptions: [], userAnswer: ""},
+    {id: 3, questionText: "What are your weaknesses? (please pick 3 - 5 from our list or add your own)", answerOptions: [], userAnswer: ""},
+    {id: 4, questionText: "Do you want to get married?", answerOptions: [], userAnswer: ""},
+    {id: 5, questionText: "If yes, when do you want to get married?", answerOptions: [], userAnswer: ""},
+    {id: 6, questionText: "Who is responsible for earning money in the relationship", answerOptions: [], userAnswer: ""},
+    {id: 7, questionText: "If both, how much? (in percent)", answerOptions: [], userAnswer: ""},
+    {id: 8, questionText: "Who will be responsible for budgeting?", answerOptions: [], userAnswer: ""},
+    {id: 9, questionText: "Who is responsible for housekeeping", answerOptions: [], userAnswer: ""},
+    {id: 10, questionText: "Do you want to have pets?", answerOptions: [], userAnswer: ""},
+    {id: 11, questionText: "If yes, how many?", answerOptions: [], userAnswer: ""},
+    {id: 12, questionText: "Do you want to have children?", answerOptions: [], userAnswer: ""},
+    {id: 13, questionText: "If yes, how many?", answerOptions: [], userAnswer: ""},
+    {id: 14, questionText: "Who should pay for dates?", answerOptions: [], userAnswer: ""},
+    {id: 15, questionText: "Do you ever want to get married?", answerOptions: [], userAnswer: ""}, 
+    {id: 16, questionText: "If yes, do you have a time scale or date in mind?", answerOptions: [], userAnswer: ""},
+    {id: 17, questionText: "Do you have any of what you consider to be bad habits?", answerOptions: [], userAnswer: ""},
+    {id: 18, questionText: "If yes, please select all that apply?", answerOptions: [], userAnswer: ""},
+    {id: 19, questionText: "Are you an introvert, extreovert, or ambivert?", answerOptions: [], userAnswer: ""},
+    {id: 20, questionText: "Do you prefer small nice gestures regularly and consistently, or large grandiose gestures occassionaly?", answerOptions: [], userAnswer: ""}, 
+    {id: 21, questionText: "Please name 3 things that you will never accept in a partner?", answerOptions: [], userAnswer: ""}, 
+    {id: 22, questionText: "How often do you need sexual intercourse in a relationship?", answerOptions: [], userAnswer: ""},
+    {id: 23, questionText:  "At what point in time do you feel comfortable to start hacing sexual intercourse with your partner?", answerOptions: [], userAnswer: ""},
+    {id: 24, questionText: "Do you believe in starsigns?", answerOptions: [], userAnswer: ""},
+    {id: 25, questionText: "If yes, what is your starsign?", answerOptions: [], userAnswer: ""},
+    {id: 26, questionText: "Do you believe in astrology?", answerOptions: [], userAnswer: ""},
 ]
